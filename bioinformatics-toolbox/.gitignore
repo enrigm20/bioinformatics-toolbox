@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+orf_analysis_results.txt
+sequence_record_summary.txt
+translated_proteins.fasta
+gbk_cds_coordinates.csv
+genomic_features.csv
+nucleotide_counts.txt

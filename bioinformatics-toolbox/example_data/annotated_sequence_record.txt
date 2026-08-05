@@ -1,0 +1,5 @@
+>example_record gene=ABC1
+ORGANISM Homo sapiens
+JOURNAL Example sequence record for testing
+ATGCGCGCTTAACCGGTTAA
+

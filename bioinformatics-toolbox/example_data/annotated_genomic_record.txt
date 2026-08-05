@@ -1,0 +1,11 @@
+ID   EXAMPLE
+FT   gene            1..90
+FT                   /gene="1"
+FT   CDS             1..90
+FT                   /product="DNA-binding protein"
+FT   gene            complement(120..240)
+FT                   /gene="2"
+FT   CDS             complement(120..240)
+FT                   /product="hypothetical protein"
+//
+
