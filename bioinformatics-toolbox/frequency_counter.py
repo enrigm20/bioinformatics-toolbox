@@ -1,5 +1,3 @@
-# Original file: freq_counter.py
-
 import sys
 
 def compress1(lis):
