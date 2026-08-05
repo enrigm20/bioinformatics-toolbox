@@ -1,7 +1,6 @@
 import re
 import sys
 
-# Original file: PARSE GENOMIC FASTA.py
 # The file being parsed is an annotated flat file, not a genomic FASTA file.
 
 if len(sys.argv) != 3:
