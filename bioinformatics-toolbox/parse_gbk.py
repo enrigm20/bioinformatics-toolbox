@@ -1,7 +1,6 @@
 import re
 import sys
 
-# Original file: PARSE GBK.py
 # The input and output paths are provided when running the script.
 
 if len(sys.argv) != 3:
