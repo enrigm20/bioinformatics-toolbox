@@ -1,5 +1,3 @@
-# Original file: DNATOPROT.py
-
 import sys
 
 genetic_code = {
