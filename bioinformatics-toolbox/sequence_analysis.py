@@ -1,8 +1,6 @@
 import re
 import sys
 
-# Original file: DNA2SEQIDLE.py
-
 
 # Length function
 def length(seq):
