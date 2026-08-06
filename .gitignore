@@ -8,3 +8,4 @@ translated_proteins.fasta
 gbk_cds_coordinates.csv
 genomic_features.csv
 nucleotide_counts.txt
+real_data/
