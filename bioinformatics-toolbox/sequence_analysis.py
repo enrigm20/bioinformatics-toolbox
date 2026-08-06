@@ -107,13 +107,13 @@ def number_one(seq, output_file):
 
 # Function for exercise 2
 def parsing(fasta, output_file):
-    gene = re.search(r'gene=([A-Za-z0-9_-]+)', fasta)
+    gene = re.search(r'/gene="([^"]+)"', fasta)
     org = re.search(r'ORGANISM\s+(.+)', fasta)
     journals = re.findall(r'JOURNAL\s+(.+)', fasta)
 
-    # The sequence is taken from the final FASTA-style block in the file.
-    seq = re.search(r'([ATCG]{10,}(?:\s+[ATCG]+)*)\s*$', fasta, re.DOTALL)
-    seq = re.sub(r'\s+', '', seq.group(1))
+    # Get DNA sequence from the ORIGIN section of a GenBank file
+    origin = re.search(r'ORIGIN\s+(.+?)//', fasta, re.DOTALL)
+    seq = re.sub(r'[^ATCG]', '', origin.group(1).upper())
 
     out = open(output_file, "w")
     out.write("Gene Abbreviation: " + gene.group(1) + "\n")
